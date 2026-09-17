@@ -1,21 +1,7 @@
-    ---
-    const page_title = "My Astro Learning Blog"
-    ---
-    
-    <html lang="fr">
-        <head>
-            <meta charset="utf-8" />
-            <meta name="viewport" content="width=device-width" />
-            <meta name="generator" content={Astro.generator} />
-            <title>{page_title}</title>
-        </head>
-        <body>
-
-            <a href="/">Home</a>
-            <br>
-            <a href="/about/">About</a>
-            <br>
-            <a href="/blog/">le blog</a>
-
-        </body>
-    </html>
+---
+import BaseLayout from '../Layout/BaseLayout.astro';
+const pageTitle = "Home Page";
+---
+<BaseLayout pageTitle={pageTitle}>
+  <h2>My awesome blog subtitle</h2>
+</BaseLayout>
