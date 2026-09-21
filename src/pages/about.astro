@@ -10,7 +10,9 @@ const identity = {
 };
 
 const skills = ["HTML", "CSS", "JavaScript", "React", "Astro", "Writing Docs"];
-
+const skillColor = "crimson";
+const fontWeight = "bold";
+const textCase = "uppercase"
 const happy = true;
 const finished = false;
 const goal = 3;
@@ -18,12 +20,20 @@ import BaseLayout from '../Layout/BaseLayout.astro'
 ---
 
 <html lang="fr">
+
+    <style define:vars={{skillColor,fontWeight,textCase}}>
+        .skill {
+            color: var(--skillColor);
+            font-weight: var(--fontWeight);
+            text-transform: var(--textCase);
+        }
+    </style>
     <head>
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width" />
         <meta name="generator" content={Astro.generator} />
         <!-- <title>Bienvenue sur mon site !</title> -->
-        
+
     </head>
 
     <BaseLayout title={pageTitle}>
