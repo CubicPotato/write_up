@@ -1,18 +1,28 @@
-# Starlight Starter Kit: Basics
+# Write Up
 
 [![Built with Starlight](https://astro.badg.es/v2/built-with-starlight/tiny.svg)](https://starlight.astro.build)
 
-```
-npm create astro@latest -- --template starlight
-```
+> Une base de documentation et de tutoriels construite avec Astro et Starlight.
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+## 👤 Auteur
 
-## 🚀 Project Structure
+Ce projet est développé et maintenu par **CubicPotato**.
 
-Inside of your Astro + Starlight project, you'll see the following folders and files:
+L’objectif est de partager des connaissances, des retours d’expérience et des tutoriels accessibles autour du développement web, de l’administration système et des outils utilisés au quotidien.
 
-```
+## 🎯 Objectifs du projet
+
+Write Up a pour objectifs de :
+
+- centraliser des tutoriels et des notes techniques ;
+- expliquer des concepts complexes de manière simple et progressive ;
+- conserver une trace des solutions et problèmes rencontrés ;
+- partager des bonnes pratiques avec la communauté ;
+- proposer une documentation claire, accessible et régulièrement améliorable.
+
+## 🚀 Structure du projet
+
+```text
 .
 ├── public/
 ├── src/
@@ -25,25 +35,32 @@ Inside of your Astro + Starlight project, you'll see the following folders and f
 └── tsconfig.json
 ```
 
-Starlight looks for `.md` or `.mdx` files in the `src/content/docs/` directory. Each file is exposed as a route based on its file name.
+Starlight recherche les fichiers `.md` et `.mdx` dans le dossier `src/content/docs/`. Chaque fichier devient une page accessible depuis le site.
 
-Images can be added to `src/assets/` and embedded in Markdown with a relative link.
+Les images peuvent être ajoutées dans `src/assets/` et les fichiers statiques, comme les favicons, dans `public/`.
 
-Static assets, like favicons, can be placed in the `public/` directory.
+## 🧞 Commandes
 
-## 🧞 Commands
+Toutes les commandes sont exécutées depuis la racine du projet :
 
-All commands are run from the root of the project, from a terminal:
+| Commande | Description |
+| --- | --- |
+| `npm install` | Installe les dépendances |
+| `npm run dev` | Lance le serveur local sur `localhost:4321` |
+| `npm run build` | Génère le site de production dans `dist/` |
+| `npm run preview` | Prévisualise le build de production |
+| `npm run astro -- --help` | Affiche l’aide de la CLI Astro |
 
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `npm install`             | Installs dependencies                            |
-| `npm run dev`             | Starts local dev server at `localhost:4321`      |
-| `npm run build`           | Build your production site to `./dist/`          |
-| `npm run preview`         | Preview your build locally, before deploying     |
-| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `npm run astro -- --help` | Get help using the Astro CLI                     |
+## ✍️ Ajouter un tutoriel
 
-## 👀 Want to learn more?
+1. Créez un fichier `.md` ou `.mdx` dans `src/content/docs/`.
+2. Ajoutez les métadonnées de la page.
+3. Rédigez le tutoriel en Markdown ou MDX.
+4. Vérifiez le résultat avec `npm run dev`.
+5. Lancez `npm run build` avant de publier.
 
-Check out [Starlight’s docs](https://starlight.astro.build/), read [the Astro documentation](https://docs.astro.build), or jump into the [Astro Discord server](https://astro.build/chat).
+## 🔗 Ressources
+
+- [Documentation Starlight](https://starlight.astro.build/)
+- [Documentation Astro](https://docs.astro.build/)
+- [Communauté Astro](https://astro.build/chat)
